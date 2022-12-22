@@ -1,0 +1,169 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(poppins/Poppins-Regular.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+/*! Tête de page */
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75px; 
+    font-size: 14px;
+    background-color: white;
+    border-bottom: 1.5px solid gainsboro;
+}
+
+header section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.button:hover {
+    color: rgba(0,0,0,0.73);
+}
+
+.button strong{
+    border: 2px solid black; 
+    padding: 15px 3px;
+}
+
+.coeur {
+    font-size: 30px;
+    color: maroon;
+}
+
+/*! barre de recherche */
+
+input {
+    width: 35%;
+    height: 2rem;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+}
+
+/*! Le tableau */
+
+.main {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 15%;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.flecheDesc {
+    width: 0; 
+    height: 0; 
+    float:right;
+    margin: 10px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid gray;
+  }
+  .flecheAsc {
+    width: 0; 
+    height: 0;
+    float:right;
+    margin: 10px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid gray;
+  }
+
+thead tr {
+    background-color: #F1F3F7;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tbody tr, td, th {
+    border: 1px solid gainsboro;
+}
+
+p.mail {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+span {
+    color:blue;
+}
+
+
+/*! Pied de page */
+
+footer {
+    display: inline-block;
+    height: 125px;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
+    border-top: 1.5px solid gainsboro;
+}   
+
+.uni {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bouton {
+    font-size: 14px;
+    color: #374871
+}
+
+footer .footer-container {
+    display: flex;
+    padding-top: 55px;
+    justify-content: space-evenly;
+}
+
+div.footer.gauche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+div.footer.droite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1%;
+}

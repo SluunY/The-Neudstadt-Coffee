@@ -1,0 +1,197 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(poppins/Poppins-Regular.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+/*! Tête de page */
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75px; 
+    font-size: 14px;
+    background-color: white;
+    border-bottom: 1.5px solid gainsboro;
+}
+
+header section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.button:hover {
+    color: rgba(0,0,0,0.73);
+}
+
+.button strong{
+    border: 2px solid black; 
+    padding: 15px 3px;
+}
+
+.coeur {
+    font-size: 30px;
+    color: maroon;
+}
+
+/*! Banniere */
+
+.banniere img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.blog {
+    position: absolute;
+    top: 10%;
+    margin-left: 15%;
+    font-size: 35px;
+    color: white;
+}
+
+
+/*! Les Blocs */
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.bouton-article {
+    font-size: 13px;
+    font-weight: 500;
+    color: grey;
+    border: 1.5px solid gainsboro;
+    border-radius: 60px;
+    padding: 1%;
+}
+
+.bouton-article:hover {
+    border: 1.5px solid grey;
+}
+
+.date {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.haut {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    gap: 10%;
+}
+
+.bas {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.bloc {
+    width: 30%;
+    border: 1.5px solid gainsboro;
+    padding: 1%;
+}
+
+.bloc:hover {
+    box-shadow: 1px 1px 10px grey;
+    cursor: grab;
+}
+
+
+.texte {
+    font-size: 11px;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.bloc p strong {
+    font-size: 12px;
+}
+
+.fleche {
+    display: inline;
+}
+
+.article {
+    display: inline;
+    font-size: 11px;
+}
+
+.article:hover {
+    text-decoration: underline;
+}
+
+
+/*! Pied de page */
+
+footer {
+    display: inline-block;
+    height: 125px;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
+    border-top: 1.5px solid gainsboro;
+}   
+
+.uni {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bouton {
+    font-size: 14px;
+    color: #374871
+}
+
+footer .footer-container {
+    display: flex;
+    padding-top: 55px;
+    justify-content: space-evenly;
+}
+
+div.footer.gauche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+div.footer.droite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1%;
+}

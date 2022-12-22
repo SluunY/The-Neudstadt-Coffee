@@ -1,0 +1,175 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(poppins/Poppins-Regular.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+/*! Tête de page */
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75px; 
+    font-size: 14px;
+    background-color: white;
+    border-bottom: 1.5px solid gainsboro;
+}
+
+header section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.button:hover {
+    color: rgba(0,0,0,0.73);
+}
+
+.button strong{
+    border: 2px solid black; 
+    padding: 15px 3px;
+}
+
+.coeur {
+    font-size: 30px;
+    color: maroon;
+}
+
+/*! La boîte */
+
+.main {
+    display: flex;
+}
+
+/*! L'image de gauche */
+
+img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*! Les textes à droite de l'image */
+
+.texte {
+    width: 50%;
+    margin: 5%;
+}
+
+.titre {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.sous-titre {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.firstcontainer {
+    display: flex;
+    gap: 40px;
+}
+
+.firstleft {
+    margin-top: 20px;
+    font-size: 14px;
+    width: 220px;
+}
+
+.firstright {
+    margin-top: 20px;
+    font-size: 14px;
+    width: 220px;
+}
+
+.secondcontainer {
+    display: flex;
+}
+
+.secondleft {
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+    width: 240px;
+}
+
+.secondright {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 14px;
+    width: 525px;
+}
+
+.decoration {
+    color: black;
+    width: 100%;
+}
+
+.contenu {
+    font-size: 14px;
+}
+
+
+/*! Pied de page */
+
+footer {
+    display: inline-block;
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
+    border-top: 1.5px solid gainsboro;
+}   
+
+.uni {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bouton {
+    font-size: 14px;
+    color: #374871
+}
+
+footer .container {
+    display: flex;
+    padding-top: 55px;
+    justify-content: space-evenly;
+}
+
+div.footer.gauche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.footer.droite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
